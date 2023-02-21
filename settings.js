@@ -15,25 +15,27 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['0783037971'] //ur owner number
-global.ownername = "𝚙𝚛𝚊𝚖𝚎𝚜𝚑 𝚗𝚒𝚕𝚊𝚔𝚜𝚑𝚊𝚗" //ur owner name
-global.ytname = "YT: pramesh lion bot tech" //ur yt chanel name
-global.socialm = "GitHub: pn" //ur github or insta name
-global.location = "srilanka,colombo" //ur location
+global.owner = ['94783037971'] //ur owner number
+global.ownername = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" //ur owner name
+global.ytname = "YT: PRAMESH LION BOT TECH" //ur yt chanel name
+global.socialm = "GitHub: DGXeon" //ur github or insta name
+global.location = "India, Mizoram, Aizawl" //ur location
 
 //bot bomdy 
+global.menumoji = "💌"
+global.alivepic = "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
+global.alivemsg = "⛁⛀⛃⛀⛁⛀⛃⛀⛁"
+global.menuimoji = "💌" //✅✅✅
 global.ownernomer = "94783037971" //ur number
 global.premium = ['94783037971'] //ur premium number
-global.botname = 'PN Whatsapp BOT' //ur bot name
+global.botname = '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒' //ur bot name
 global.linkz = "https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew" //your theme url which will be displayed on whatsapp
-global.websitex = "https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M" //ur website to be displayed
+global.websitex = "https://youtube.com/channehttps://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPewl/UCOlt2_XK6tS2KJn6fTdpPew" //ur website to be displayed
 global.botscript = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew' //script link
 global.themeemoji = "🦁" //ur theme emoji
-global.packname = "Pramesh lion bot" //ur sticker watermark packname
-global.author = "pn whatsapp bot\n\n\nA whatsapp bot developed by\n🦁pramesh lion bot\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +94704472592" //ur sticker watermark author
-global.wm = "pn Bot Inc." //ur watermark
-global.alivepic = "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
-global.alivemsg = "\n\n\n*╚═══❖•ೋ° °ೋ•❖═══╝*\n
+global.packname = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" //ur sticker watermark packname
+global.author = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n\n\nA whatsapp bot developed by\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : 94783037971" //ur sticker watermark author
+global.wm = "Xeon Bot Inc." //ur watermark
 
 // Other
 global.sessionName = 'session'
@@ -42,7 +44,7 @@ global.sp = ''
 
 //messages
 global.mess = {
-    success: 'හරි✅',
+    success: 'බේන් ආ ගන් තොගෙ මේක',
     admin: 'This feature could be used by admins only!',
     botAdmin: 'Bot Must Be Admin First!',
     premime: 'Premium Special Features If You Want to Register Type Rent',
@@ -50,7 +52,7 @@ global.mess = {
     group: 'Features Used Only For Groups!',
     private: 'Features Used Only For Private Chat!',
     bot: 'This feature could be used by bot only',
-    wait: '⚒️ටිකක් ඉන්න🛠️',
+    wait: 'පොඩ්ඩක් හිටපන්',
     linkm: 'Where is the link?',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
     nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
