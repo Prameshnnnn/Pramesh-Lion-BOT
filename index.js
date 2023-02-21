@@ -99,7 +99,7 @@ async function startXeonBotInc() {
         if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(XeonBotInc, mek, store)
-        require("./Prameshlionbot")(XeonBotInc, m, chatUpdate, store)
+        require("./XeonCheems6")(XeonBotInc, m, chatUpdate, store)
         } catch (e) {
             console.log(e)
         }
@@ -117,11 +117,11 @@ async function startXeonBotInc() {
        let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
        XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
-       } else if(pea[0].announce == false) {
+       } else if(pea[0].announce == true) {
        XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == true) {
        XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
-       } else if (pea[0].restrict == false) {
+       } else if (pea[0].restrict == true) {
        XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else {
        XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
@@ -168,43 +168,30 @@ XeonLft = await getBuffer(ppuser)
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   │ආයුබෝවන්
-   │සාදරයෙන් ආදරයෙන් ඔයාව පිලිගන්නව
-   └───────────────┈ ⳹`
+                xeonbody = `*◈━━━━━━━━━━━━━◈*
+ *𝗛𝗶 👋*
+*◈━━━━━━━━━━━━━◈*
+𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+${metadata.subject}
+𝗠𝗲𝗺𝗯𝗲𝗿 : 
+${xmembers}th
+𝗝𝗼𝗶𝗻𝗲𝗱 : 
+${xtime} ${xdate}
+ආයුබෝවන්
+සාදරයෙන් ආදරයෙන් ඔයාව පිලිගන්නව
+@${xeonName.split("@")[0]}`
 let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: '💝Welcome💐'}, type: 1},
- {buttonId: `kick @${xeonName.split("@")[0]}`, buttonText: {displayText: 'ඔයා_යන්න'}, type: 1}
+ {buttonId: `owner`, buttonText: {displayText: 'OWNER'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonWlcm,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Don't forget to read group description`,
-mediaType:2,
-thumbnail: XeonWlcm,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
-}
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+    image: { url: `https://i.ibb.co/1ZC0hDN/Picsart-23-02-19-12-13-40-288.jpg` },
+    caption: xeonbody,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
@@ -212,43 +199,29 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
-   │ඌ ඉතින් හිටියත් වැඩක් නෑනෙ ගියපු
-   │එකමයි හොද😒
-   └───────────────┈ ⳹`
+                    xeonbody = `*◈━━━━━━━━━━━━━◈*
+        𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋
+*◈━━━━━━━━━━━━━◈*
+ 𝗟𝗲𝗳𝘁 
+${metadata.subject}
+𝗠𝗲𝗺𝗯𝗲𝗿 : 
+${xeonmembers}th
+𝗧𝗶𝗺𝗲 : 
+${xeontime} ${xeondate}
+*ඌ ඉතින් හිටියත් වැඩක් නෑනෙ ගියපු*
+*එකමයි හොද*😒 @${xeonName.split("@")[0]}`
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: '😒බායි😒👋'}, type: 1},
- {buttonId: `add @${xeonName.split("@")[0]}`, buttonText: {displayText: 'නැවතත්_ගමු'}, type: 1}
+ {buttonId: `owner`, buttonText: {displayText: 'OWNER'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonLft,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Bye! my friend, take care.`,
-mediaType:2,
-thumbnail: XeonLft,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
-}
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+    image: { url: `https://i.ibb.co/y5L4VpG/Picsart-23-02-19-12-18-56-110.jpg` },
+    caption: xeonbody,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
                              
                 }
             }
@@ -394,6 +367,8 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         XeonBotInc.sendMessage(jid, listMes, { quoted: quoted })
         }
 
+	if (!isGroup) 
+return reply('⚒☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒⚒️\n🇱🇰ඔබට අයිති කරුගේ අවසරයකින් තොරව inbox භාවිතා කල නොහැක🇱🇰')
     /** Send Button 5 Message
      * 
      * @param {*} jid
