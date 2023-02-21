@@ -1,5 +1,5 @@
 {
-  "name": "CheemsBot-MD",
+  "name": "Pramesh-Lion-BOT",
   "version": "6.0.0",
   "description": "Automated whatsapp md bot created using nodejs and baileys lib",
   "type": "commonjs",
@@ -17,7 +17,7 @@
     "multi-device",
     "xeon-bot-inc"
   ],
-  "author": "DGXeon",
+  "author": "Pramesh08",
   "license": "AGPL-3",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
@@ -81,10 +81,10 @@
     "src": "src"
   },
   "devDependencies": {},
-  "repository": "git+https://github.com/DGXeon/CheemsBot-MD6.git",
+  "repository": "git+https://github.com/Pramesh08/Pramesh-Lion-BOT.git",
   "bugs": {
-    "url": "https://github.com/DGXeon/CheemsBot-MD6/issues"
+    "url": "https://github.com/Pramesh08/Pramesh-Lion-BOT/issues"
   },
-  "homepage": "https://github.com/DGXeon/CheemsBot-MD6/#readme",
+  "homepage": "https://github.com/Pramesh08/Pramesh-Lion-BOT/#readme",
   "main": "index.js"
 }
